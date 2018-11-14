@@ -1,0 +1,20 @@
+name: WebAuth
+main: PJSoft\WebAuth\Main
+version: 1.0.0
+api: ["4.0.0"]
+load: POSTWORLD
+author: PJZ9n
+desctiption: WebAuthPlugin
+website: http://pjsoft.asvd.net/
+permissions:
+  webauth.*:
+    default: true
+    description: "Allows using all the WebAuth things"
+    children:
+      webauth.command.*:
+        default: true
+        description: "Allows using all the WebAuth commands"
+        children:
+          webauth.command.auth:
+            default: true
+            description: "Allows all the auth command"
